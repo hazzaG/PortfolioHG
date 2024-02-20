@@ -1,0 +1,550 @@
+:root {
+    --color-blue: #264653;
+    --color-blue-rgb: 38, 70, 83;
+    --color-cyan: #2a9d8f;
+    --color-cyan-rgb: 42, 157, 143;
+    --color-yellow: #e9c46a;
+    --color-yellow-rgb: 233, 196, 106;
+    --color-orange: #f4a261;
+    --color-orange-rgb: 244, 162, 97;
+    --color-red: #e76f51;
+    --color-red-rgb: 231, 111, 81;
+    --color-gray: #545450;
+    --color-gray-rgb: 84, 84, 80;
+    --color-black: #2d2723;
+    --color-black-rgb: 45, 39, 35;
+    --color-white: #fffaF0;
+    --color-white-rgb: 255, 250, 240;
+
+
+
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+
+
+
+    --primary: #3b3c37;
+    --primary-rgb: 59, 60, 55;
+    --primatybg: #fffaF0;
+    --primatybg-rgb: 255, 250, 240;
+
+
+}
+
+[data-theme="dark"] {
+    --primary: #fffaF0;
+    --primary-rgb: 255, 250, 240;
+    --primatybg: #3b3c37;
+    --primatybg-rgb: 59, 60, 55;
+}
+
+.hg_blue {
+    background-color: var(--color-blue);
+}
+
+.hg_cyan {
+    background-color: var(--color-cyan)
+}
+
+.hg_yellow {
+    background-color: var(--color-yellow);
+}
+
+.hg_orange {
+    background-color: var(--color-orange);
+}
+
+.hg_red {
+    background-color: var(--color-red);
+}
+
+.hg_gray {
+    background-color: var(--color-gray);
+}
+
+.revert {
+    transition: 0.1s;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+body {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background-color: var(--color-white);
+}
+
+
+.panel_container p,
+.panel_container img {
+    padding: 6%;
+}
+
+
+.side_panel_blue {
+    border-right: #fffaF0 solid 3px;
+    background-color: var(--color-blue);
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+    text-align: left;
+    position: fixed;
+    justify-content: flex-end;
+    align-items: end;
+    width: 55%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: transform 1s, animation 1s;
+    opacity: 1;
+    left: 0;
+    transform: translateX(-95%);
+    animation: fade-in 1s ease-out 1s 1 normal forwards;
+    z-index: 710;
+}
+
+.side_panel_cyan {
+    border-right: #fffaF0 solid 3px;
+    background-color: var(--color-cyan);
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+    text-align: left;
+    position: fixed;
+    justify-content: flex-end;
+    align-items: end;
+    width: 55%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: transform 1s, animation 1s;
+    opacity: 1;
+    left: 0;
+    transform: translateX(-90%);
+    animation: fade-in 1s ease-out 1s 1 normal forwards;
+    z-index: 709;
+}
+
+.side_panel_yellow {
+    border-right: #fffaF0 solid 3px;
+    background-color: var(--color-yellow);
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+    text-align: left;
+    position: fixed;
+    justify-content: flex-end;
+    align-items: end;
+    width: 55%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: transform 1s, animation 1s;
+    opacity: 1;
+    left: 0;
+    transform: translateX(-85%);
+    animation: fade-in 1s ease-out 1s 1 normal forwards;
+    z-index: 708;
+}
+
+.side_panel_orange {
+    border-right: #fffaF0 solid 3px;
+    background-color: var(--color-orange);
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+    text-align: left;
+    position: fixed;
+    justify-content: flex-end;
+    align-items: end;
+    width: 55%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: transform 1s, animation 1s;
+    opacity: 1;
+    left: 0;
+    transform: translateX(-80%);
+    animation: fade-in 1s ease-out 1s 1 normal forwards;
+    z-index: 707;
+}
+
+.side_panel_red {
+    border-right: #fffaF0 solid 3px;
+    background-color: var(--color-red);
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+    text-align: left;
+    position: fixed;
+    justify-content: flex-end;
+    align-items: end;
+    width: 55%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: transform 1s, animation 1s;
+    opacity: 1;
+    left: 0;
+    transform: translateX(-75%);
+    animation: fade-in 1s ease-out 1s 1 normal forwards;
+    z-index: 706;
+}
+
+/*@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}*/
+
+.slide {
+    transition: transform 1s cubic-bezier(.51, .92, .40, 1.1);
+    transform: translateX(40%);
+
+}
+
+.spacingBox {
+    height: 200px;
+    width: 100%;
+}
+
+.centralBox {
+    width: 95%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.navContainer {
+    border-radius: 25px;
+    transition: background-color 1s;
+}
+
+.navContainer div {
+    color: #fffaF0;
+
+}
+
+/* Materilize edits */
+
+#btn-container {
+    position: fixed;
+    width: 2.1%;
+    z-index: 1200;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightUp {
+    box-shadow: inset 0px 0px 1px 1px var(--color-white);
+    transition: 0.5s;
+}
+
+
+.material-icons {
+    pointer-events: none;
+    user-select: none;
+}
+
+
+
+.fixed-action-btn {
+    position: fixed;
+    top: 3vh;
+    right: 2vw;
+    padding: 15px;
+    margin-right: 3vh;
+    z-index: 997;
+    width: 5%;
+    height: 5%;
+    margin: 55px;
+    padding: 55px;
+}
+
+@media (max-width: 640px) {
+    .fixed-action-btn {
+        position: fixed;
+        top: 1vh;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 997;
+    }
+}
+
+@media (min-width: 641px) {
+    .fixed-action-btn {
+        position: fixed;
+        top: 1vh;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 997;
+    }
+}
+
+@media (min-width: 768px) {
+    .fixed-action-btn {
+        position: fixed;
+        top: 1vh;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 997;
+    }
+}
+
+@media (min-width: 1024px) {
+    .fixed-action-btn {
+        position: fixed;
+        top: 1vh;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 997;
+    }
+}
+
+@media (min-width: 1200px) {
+    .fixed-action-btn {
+        position: fixed;
+        top: 1vh;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 997;
+    }
+}
+
+@media (min-width: 1400px) {
+    .fixed-action-btn {
+        position: fixed;
+        top: 1vh;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 997;
+    }
+}
+
+@media (min-width: 1600px) {
+    .fixed-action-btn {
+        position: fixed;
+        top: 1vh;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 997;
+    }
+}
+
+@media (min-width: 1920px) {
+    .fixed-action-btn {
+        position: fixed;
+        top: 1vh;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 997;
+    }
+
+
+}
+
+.fixed-action-btn.direction-bottom ul {
+    top: 55px;
+
+}
+
+.btn-floating {
+    color: white;
+    transition: opacity 0.3s;
+}
+
+.btn-floating>i:hover {
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+
+/*
+.fixed-action-btn.direction-bottom ul li {
+    margin: 30px 0 0 0;
+}
+
+.btn-shift {
+    transition: transform 1.5s linear;
+    transform: translateX(-270%);
+}
+.dropdown-container a {}
+*/
+
+.btn-floating {
+    box-shadow: 0 0 #0000;
+}
+
+.btn-large {
+    box-shadow: 0 0 #0000;
+}
+
+#btn-collapse:hover {
+    background-color: var(--color-gray);
+    border-radius: 30px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+#btn-red:hover {
+    background-color: var(--color-red);
+    border-radius: 30px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+#btn-orange:hover {
+    background-color: var(--color-orange);
+    border-radius: 30px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+#btn-yellow:hover {
+    background-color: var(--color-yellow);
+    border-radius: 30px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+#btn-cyan:hover {
+    background-color: var(--color-cyan);
+    border-radius: 30px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+#btn-blue:hover {
+    background-color: var(--color-blue);
+    border-radius: 30px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+
+
+/* breathing background*/
+html {
+    height: 100%;
+}
+
+
+.fullmain {
+    background-image: linear-gradient(rgba(var(--color-blue-rgb))5%, rgba(var(--color-cyan-rgb))5%, rgba(var(--color-red-rgb)),
+            rgba(var(--color-orange-rgb)), rgba(var(--color-yellow-rgb)));
+    position: relative;
+    z-index: -99;
+    overflow: hidden;
+    height: 100%;
+
+
+}
+
+.fullmain::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    background: linear-gradient(to bottom, rgba(var(--color-blue-rgb))5%, rgba(var(--color-cyan-rgb))5%, rgba(var(--color-red-rgb)),
+            rgba(var(--color-orange-rgb)), rgba(var(--color-yellow-rgb)));
+    transition: transform 30s;
+    z-index: -101;
+}
+
+.scroll::before {
+    transform: translateY(-50%);
+}
+
+
+/*This moves the gradient. Not it's z-index is not specified so is 0. This means it will display before a -1 z-index */
+
+
+#header {
+    position: absolute;
+    width: 100%;
+    z-index: 1100;
+    height: fit-content;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    transition: background-color 1s;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*----------
+
+.record_container {
+    visibility: hidden;
+    pointer-events: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+}
+
+.record_grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1002;
+}
+
+.record_grid_item {
+    position: absolute;
+    margin: auto;
+    padding: auto;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.record_lines {
+    height: 1000px;
+    width: 1000px;
+    
+    border-radius: 100%;
+    z-index: 1003;
+    animation: spin 5s infinite ease-in-out;
+    transition: 5s;
+}
+
+.record_dirt {
+    background-image: repeating-radial-gradient(rgba(var(--color-black))80%, rgba(var(--color-gray))19%, rgba(var(--color-white))1%);
+}
+
+.record_center {
+    --color-gray: #545450;
+    --color-gray-rgb: 84, 84, 80;
+    --color-black: #2d2723;
+    --color-black-rgb: 45, 39, 35;
+    --color-white: #fffaF0;
+    --color-white-rgb: 255, 250, 240;
+    
+}
+
+.record_shine {
+    pointer-events: none;
+}
+
+-----------*/
