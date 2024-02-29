@@ -45,37 +45,52 @@ var offClickReference = (function offClickFunction() {
 function slideLeft(clicked_id) {
     switch (clicked_id) {
         case "btn-blue":
-            $("#cyan_panel, #yellow_panel, #orange_panel, #red_panel").removeClass('slide');
-            $("#blue_panel").addClass('slide');
+            $("#cyan_panel, #yellow_panel, #orange_panel").removeClass('slide shadowBox');
+            $("#cyan_panel, #yellow_panel, #orange_panel").addClass('panel_line');
+            $("#red_panel").removeClass('slide')
+            $("#blue_panel").removeClass('panel_line');
+            $("#blue_panel").addClass('slide shadowBox');
             $("#navContainer").removeClass("hg_cyan hg_yellow hg_orange hg_red hg_gray");
             $("#navContainer").addClass("hg_blue")
             break;
         case "btn-cyan":
-            $("#blue_panel, #yellow_panel, #orange_panel, #red_panel").removeClass('slide');
-            $("#cyan_panel").addClass('slide');
+            $("#blue_panel, #yellow_panel, #orange_panel").removeClass('slide shadowBox');
+            $("#blue_panel, #yellow_panel, #orange_panel").addClass('panel_line');
+            $("#red_panel").removeClass('slide')
+            $("#cyan_panel").removeClass('panel_line');
+            $("#cyan_panel").addClass('slide shadowBox');
             $("#navContainer").removeClass("hg_blue hg_yellow hg_orange hg_red hg_gray");
             $("#navContainer").addClass("hg_cyan")
             break;
         case "btn-yellow":
-            $("#blue_panel, #cyan_panel, #orange_panel, #red_panel").removeClass('slide');
-            $("#yellow_panel").addClass('slide');
+            $("#blue_panel, #cyan_panel, #orange_panel").removeClass('slide shadowBox');
+            $("#blue_panel, #cyan_panel, #orange_panel").addClass('panel_line');
+            $("#red_panel").removeClass('slide')
+            $("#yellow_panel").removeClass('panel_line');
+            $("#yellow_panel").addClass('slide shadowBox');
             $("#navContainer").removeClass("hg_blue hg_cyan hg_orange hg_red hg_gray");
             $("#navContainer").addClass("hg_yellow")
             break;
         case "btn-orange":
-            $("#blue_panel, #cyan_panel, #yellow_panel, #red_panel").removeClass('slide');
-            $("#orange_panel").addClass('slide');
+            $("#blue_panel, #cyan_panel, #yellow_panel").removeClass('slide shadowBox');
+            $("#blue_panel, #cyan_panel, #yellow_panel").addClass('panel_line');
+            $("#red_panel").removeClass('slide')
+            $("#orange_panel").removeClass('panel_line');
+            $("#orange_panel").addClass('slide shadowBox');
             $("#navContainer").removeClass("hg_blue hg_cyan hg_yellow hg_red hg_gray");
             $("#navContainer").addClass("hg_orange")
             break;
         case "btn-red":
             $("#blue_panel, #cyan_panel, #yellow_panel, #orange_panel").removeClass('slide');
+            $("#blue_panel, #cyan_panel, #yellow_panel, #orange_panel").addClass('panel_line');
             $("#red_panel").addClass('slide');
             $("#navContainer").removeClass("hg_blue hg_cyan hg_yellow hg_orange hg_gray");
             $("#navContainer").addClass("hg_red")
             break;
         case "btn-collapse":
-            $("#blue_panel, #cyan_panel, #yellow_panel, #orange_panel, #red_panel").removeClass('slide');
+            $("#blue_panel, #cyan_panel, #yellow_panel, #orange_panel").removeClass('slide shadowBox');
+            $("#red_panel").removeClass('slide')
+            $("#blue_panel, #cyan_panel, #yellow_panel, #orange_panel").addClass('panel_line');
             $("#navContainer").addClass("hg_gray")
             $("#navContainer").removeClass("hg_blue hg_cyan hg_yellow hg_orange hg_red");
             break;
