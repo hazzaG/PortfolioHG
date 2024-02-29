@@ -7,14 +7,23 @@
     <title>Harrison Gerry</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="stylesheet" href="./PortfolioFinal.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./Assets/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Assets/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Assets/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="./Assets/Favicon/site.webmanifest">
+    <link rel="mask-icon" href="./Assets/Favicon/safari-pinned-tab.svg" color="#5bbad5">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="./PortfolioFinal.js"></script>
+    <script defer src="./PortfolioFinal.js"></script>
 </head>
 
 <body>
+
+    <div id="fullmain" class="fullmain scroll"></div>
+
 
 
     <header id="header">
@@ -30,81 +39,137 @@
 
     <div class="centralBox">
         <div class="row">
-            <div class="col s8 m9 l10 flow-text">
-                <div>Welcome to my portfolio</div>
+            <div class="col s4 m3 l3 flow-text"></div>
+            <div class="col s4 m6 l7 flow-text textLeft">
+                <div>
+                    <h4>Hello, I am</h4>
+                </div>
+                <div class="spacingBox3"></div>
+                <img id="mePic" width="300px" height="300px"
+                    src="https://media.licdn.com/dms/image/C4D03AQEmKeQ6ncsFmg/profile-displayphoto-shrink_200_200/0/1649764459691?e=1714003200&v=beta&t=n9bjRVy_mhXLQD0of--VpwrD1VsprMdKkC5-eiOjgGY"
+                    alt="Picture of me, Harrison Gerry">
+                <div>
+                    <h1>Harrison <span class="rainbowBlue rainbowFade">G</span><span
+                            class="rainbowCyan rainbowFade">e</span><span
+                            class="rainbowYellow rainbowFade">r</span><span
+                            class="rainbowOrange rainbowFade">r</span><span class="rainbowRed rainbowFade">y</span></h1>
+                </div>
+                <div class="spacingBox3"></div>
+                <div>
+                    <h4>Welcome to my portfolio</h4>
+                </div>
+                <div class="spacingBox3"></div>
+                <div class="col l2 m2 s2">
+                    <h3><a href="https://github.com/hazzaG"><i class="devicon-github-original hg_black_text"></i></a>
+                    </h3>
+                </div>
+                <div class="col l2 m2 s2">
+                    <h3><a href="https://www.linkedin.com/in/harrison-gerry-54755a1b7/"><i
+                                class="devicon-linkedin-plain hg_black_text"></i></a></h3>
+                </div>
+                <div class="col l2 m2 s2">
+
+                </div>
             </div>
-            <div class="col s4 m3 l2 flow-text">
+            <div class="col s4 m3 l2 flow-text right">
+                <div class="spacingBox"></div>
                 <div id="navContainer" class="navContainer hg_gray">
-                    <div id="btn-collapse" onclick="slideLeft(this.id)">Navigation</div>
-                    <div id="btn-red" onclick="slideLeft(this.id)">About</div>
-                    <div id="btn-orange" onclick="slideLeft(this.id)">Skills</div>
-                    <div id="btn-yellow" onclick="slideLeft(this.id)">Projects</div>
-                    <div id="btn-cyan" onclick="slideLeft(this.id)">My CV</div>
-                    <div id="btn-blue" onclick="slideLeft(this.id)">Contact</div>
+                    <div id="btn-collapse" class="btn-fade" onclick="slideLeft(this.id)">Navigation</div>
+                    <div id="btn-red" class="btn-fade" onclick="slideLeft(this.id)">About</div>
+                    <div id="btn-orange" class="btn-fade" onclick="slideLeft(this.id)">Skills</div>
+                    <div id="btn-yellow" class="btn-fade" onclick="slideLeft(this.id)">Projects</div>
+                    <div id="btn-cyan" class="btn-fade" onclick="slideLeft(this.id)">My CV</div>
+                    <div id="btn-blue" class="btn-fade" onclick="slideLeft(this.id)">Gallery</div>
                 </div>
             </div>
 
         </div>
     </div>
 
-    <!-- 
-        <div id="btn-container" class="fixed-action-btn">
-            <a id="main-btn" class="btn-floating red btn-large">
-                <i class="large material-icons">chevron_right</i>
-        </a>
-        <ul class="dropdown-container">
-            <li><a id="btn-collapse" class="btn-floating red btn-large" onclick="slideLeft(this.id)"><i
-                        class="material-icons">chevron_left</i></a></li>
-            <li><a id="btn-red" class="btn-floating hg_red btn-large" onclick="slideLeft(this.id)"><i
-                class="material-icons">brightness_1</i></a></li>
-                <li><a id="btn-orange" class="btn-floating hg_orange btn-large" onclick="slideLeft(this.id)"><i
-                    class="material-icons">brightness_1</i></a></li>
-            <li><a id="btn-yellow" class="btn-floating hg_yellow btn-large" onclick="slideLeft(this.id)"><i
-                class="material-icons">brightness_1</i></a></li>
-                <li><a id="btn-cyan" class="btn-floating hg_cyan btn-large" onclick="slideLeft(this.id)"><i
-                    class="material-icons">brightness_1</i></a></li>
-                    <li><a id="btn-blue" class="btn-floating hg_blue btn-large" onclick="slideLeft(this.id)"><i
-                        class="material-icons">brightness_1</i></a></li>
-                        
-                    </ul>
+
+
+    <div class="side_panel_container">
+        <div id="blue_panel" class="side_panel_blue ">
+            <div class="panel_container flow-text center">
+                <h5>Contemplation</h5>
+                <iframe src="./GalleryAssets/Contemplation.png" width="900" height="506" frameborder="0"></iframe>
+                <div class="spacingLine"></div>
+                <h5>Deep Green Sea</h5>
+                <iframe src="./GalleryAssets/Deep Green Sea.png" width="506" height="506" frameborder="0"></iframe>
+                <div class="spacingLine"></div>
+                <h5>Cockpit</h5>
+                <iframe src="./GalleryAssets/cockpit.png" width="900" height="506" frameborder="0"></iframe>
+                <div class="spacingLine"></div>
+                <h5>Four fifty two</h5>
+                <iframe src="./GalleryAssets/four fifty two.png" width="900" height="506" frameborder="0"></iframe>
+                <div class="spacingLine"></div>
+                <h5>From within</h5>
+                <iframe src="./GalleryAssets/from within.png" width="900" height="506" frameborder="0"></iframe>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="side_panel_container">
+        <div id="cyan_panel" class="side_panel_cyan ">
+            <div class="panel_container flow-text">
+                <div class="spacingBox2">
+                    <embed src="./Assets/Harrison Gerry CV 2024.pdf" width="100%" height="900" type="application/pdf">
                 </div>
-            -->
-
-
-
-    <div class="side_panel_container"></div>
-    <div id="blue_panel" class="side_panel_blue ">
-        <div class="panel_container">
-
+            </div>
         </div>
     </div>
 
-    <div class="side_panel_container"></div>
-    <div id="cyan_panel" class="side_panel_cyan ">
-        <div class="panel_container">
-
+    <div class="side_panel_container">
+        <div id="yellow_panel" class="side_panel_yellow ">
+            <div class="panel_container flow-text">
+                <iframe src="./jsObjectCreator/index.html" width="100%" height="425"></iframe>
+                <iframe src="https://replit.com/@h3gerry1/AlchemyProject?embed=true" width="100%" height="425"></iframe>
+            </div>
         </div>
     </div>
 
-    <div class="side_panel_container"></div>
-    <div id="yellow_panel" class="side_panel_yellow ">
-        <div class="panel_container">
-
+    <div class="side_panel_container">
+        <div id="orange_panel" class="side_panel_orange ">
+            <div class="panel_container flow-text">
+                <div class="spacingBox3"></div>
+                <div class="row">
+                    <div class="col s4 m3 l2 flow-text">
+                        <i class="devicon-html5-plain"></i>
+                        <div class="spacingBox3"></div>
+                        <i class="devicon-css3-plain"></i>
+                        <div class="spacingBox3"></div>
+                        <i class="devicon-javascript-plain"></i>
+                        <div class="spacingBox3"></div>
+                        <i class="devicon-mysql-original"></i>
+                        <div class="spacingBox3"></div>
+                        <i class="devicon-python-plain"></i>
+                    </div>
+                    <div class="col s8 m9 l10 flow-text textLeft">
+                        <p>HTML 5</p>
+                        <p>CSS 3</p>
+                        <p>JavaScript</p>
+                        <p>MySQL</p>
+                        <p>Python</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="side_panel_container"></div>
-    <div id="orange_panel" class="side_panel_orange ">
-        <div class="panel_container">
 
-        </div>
-    </div>
-
-
-    <div class="side_panel_container"></div>
-    <div id="red_panel" class="side_panel_red ">
-        <div class="panel_container">
-
+    <div class="side_panel_container">
+        <div id="red_panel" class="side_panel_red ">
+            <div class="panel_container flow-text">
+                <div class="spacingBox2"></div>
+                <p>Hello, My name is Harrison Gerry.</p>
+                <p>I have just completed a software development boot camp provided by <a class="textLink"
+                        href="https://www.justit.co.uk/">JustIT</a>.
+                    I have a passion for art, design and gaming and I look forward to exploring my potential in the
+                    world of tech.</p>
+                <p>I also love role playing games and espresso.</p>
+            </div>
         </div>
     </div>
 
