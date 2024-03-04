@@ -122,7 +122,9 @@ body {
     margin-left: 50px;
 }
 
-
+.doubleBorder {
+    border: double var(--color-black) 10px;
+}
 
 .shadowBox {
     box-shadow: var(--shadow-elevation-high);
@@ -634,6 +636,10 @@ h3,
 h4 {
     padding: 0;
     margin: 0;
+}
+
+h5 {
+    color: var(--color-white);
 }
 
 
